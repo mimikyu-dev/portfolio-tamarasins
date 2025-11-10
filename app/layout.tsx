@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Portfolio von Tamara Sins – Webentwicklerin",
 };*/
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={"antialiased bg-white text-black"}>
