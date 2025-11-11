@@ -2,9 +2,11 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+
 export const metadata = {
-  title: "Tamara Sins",
-  description: "Webentwicklerin & UI/UX Designerin",
+  title: "Tamara Sins — Webentwicklung & UI/UX Design",
+  description:
+    "Portfolio von Tamara Sins: Webentwicklung & UX Design",
 };
 
 export default function RootLayout({
@@ -14,14 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="bg-[#FFF7F5] text-[#3B2E2A]">
-        {/* Header auf allen Seiten */}
+      <body className="bg-[#FFFDFB] text-[#3B2E2A]">
         <Header />
-
-        {/* Hauptinhalt */}
-        <main className="pt-24">{children}</main>
-
-        {/* Footer auf allen Seiten */}
+        <main className="pt-24 min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

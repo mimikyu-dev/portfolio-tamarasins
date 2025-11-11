@@ -17,20 +17,23 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed w-full bg-[#FFF7F5]/90 backdrop-blur-md z-50 shadow-sm">
+    <header className="fixed top-0 w-full bg-[#FFF7F5]/80 backdrop-blur-md z-50 border-b border-[#EAD9D3]/60">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo / Name */}
-        <Link href="/" className="text-xl md:text-2xl font-bold text-[#3B2E2A]">
+        <Link
+          href="/"
+          className="text-xl md:text-2xl font-bold text-[#3B2E2A] hover:opacity-80 transition"
+        >
           Tamara Sins
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6">
           {navItems.map((item, i) => (
             <Link
               key={i}
               href={item.href}
-              className={`relative px-2 py-1 rounded-2xl transition-all ${
+              className={`px-3 py-1 rounded-2xl transition-all ${
                 pathname === item.href
                   ? "bg-[#FFD6E0] shadow-md font-semibold"
                   : "hover:bg-[#FFD6E0]/50"
@@ -41,17 +44,15 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile Hamburger */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="p-2 rounded-full bg-[#FFD6E0]/50 hover:bg-[#FFD6E0]/70 transition-all"
-          >
-            <span className="block w-6 h-0.5 bg-[#3B2E2A] mb-1"></span>
-            <span className="block w-6 h-0.5 bg-[#3B2E2A] mb-1"></span>
-            <span className="block w-6 h-0.5 bg-[#3B2E2A]"></span>
-          </button>
-        </div>
+        {/* Mobile Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden p-2 rounded-full bg-[#FFD6E0]/50 hover:bg-[#FFD6E0]/70 transition-all"
+        >
+          <span className="block w-6 h-0.5 bg-[#3B2E2A] mb-1"></span>
+          <span className="block w-6 h-0.5 bg-[#3B2E2A] mb-1"></span>
+          <span className="block w-6 h-0.5 bg-[#3B2E2A]"></span>
+        </button>
       </div>
 
       {/* Mobile Menu */}
@@ -62,7 +63,7 @@ export default function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#FFF7F5]/90 shadow-md"
+            className="md:hidden bg-[#FFF7F5]/95 shadow-md border-t border-[#EAD9D3]/60"
           >
             <div className="flex flex-col px-6 py-4 gap-3">
               {navItems.map((item, i) => (

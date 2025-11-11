@@ -1,14 +1,12 @@
 "use client";
 
-import Link from "next/link";
-
 export default function Footer() {
   return (
-    <footer className="text-center py-10 bg-[#FFD6E0] text-[#3B2E2A] mt-10">
-      <p>© 2025 Tamara Sins — Designed & Built with 💖</p>
+    <footer className="text-center py-10 bg-[#FFD6E0]/60 text-[#3B2E2A] border-t border-[#EAD9D3]/60 mt-16">
+      <p>© {new Date().getFullYear()} Tamara Sins — Designed & Built with 💖</p>
       <div className="flex justify-center gap-4 mt-3 text-sm">
         <a
-          href="https://github.com/tamarasins"
+          href="https://github.com/mimikyu-dev"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
@@ -16,7 +14,7 @@ export default function Footer() {
           GitHub
         </a>
         <a
-          href="mailto:hello@tamarasins.de"
+          href="mailto:hallo@tamarasins.de"
           className="hover:underline"
         >
           E-Mail
