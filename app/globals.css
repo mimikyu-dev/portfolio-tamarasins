@@ -26,12 +26,8 @@ body {
 }
 */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
-  @apply bg-bg dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300;
+  @apply bg-primary-bg dark:bg-gray-900 text-gray-900 dark:text-white;
   font-family: 'Inter', sans-serif;
 }
 

@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#FDE8C4',
-        highlight: '#E56D6A',
-        block: '#FFFFFF',
+      'primary-bg': '#FDE8C4',
+      'highlight': '#E56D6A',
+      'block': '#FFFFFF',
       },
       fontFamily: {
         heading: ['Quicksand', 'sans-serif'],
