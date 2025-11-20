@@ -11,12 +11,12 @@ export default function Header() {
   }, [darkMode])
 
   return (
-    <header>
-        <nav className="headerNav">
-          <a href="/" className="hover:text-highlight transition">home</a>
-          <a href="/about" className="hover:text-highlight transition">über mich</a>
-          <a href="/portfolio" className="hover:text-highlight transition">portfolio</a>
-          <a href="/contact" className="hover:text-highlight transition">kontakt</a>
+    <header className="bg-[#fedfaa]/70 rounded-[28px] shadow-md w-full max-w-[800px] px-4 py-4 sm:px-5 sm:py-3 flex justify-between items-center text-[#E56D6A] mb-4 z-10">
+        <nav className="flex gap-6 sm:gap-12 ml-auto text-sm sm:text-base leading-[1.7rem]">
+          <a href="/" className="hover:underline whitespace-nowrap">home</a>
+          <a href="/about" className="hover:underline whitespace-nowrap">über mich</a>
+          <a href="/portfolio" className="hover:underline whitespace-nowrap">portfolio</a>
+          <a href="/contact" className="hover:underline whitespace-nowrap">kontakt</a>
         </nav>
     </header>
   )

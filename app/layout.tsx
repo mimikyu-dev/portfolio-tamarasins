@@ -24,9 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="de" className="scroll-smooth">
-      <body>
+      <body className="bg-[#FDE8C4] font-inter text-sm leading-[25px] m-0 p-4 flex flex-col items-center sm:justify-center min-h-screen">
         <Header />
-        <main>
+        <main className="bg-white/70 rounded-xl shadow-md max-w-[1000px] w-full h-[80vh] sm:h-[50vh] overflow-y-auto flex flex-col justify-start gap-4 p-4 sm:gap-6 sm:p-8 z-10">
           {children}
         </main>
         <Footer />
