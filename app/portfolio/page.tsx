@@ -17,8 +17,7 @@ const businessProjects = [
 ]
 
 const privateProjects = [
-  { id: 'private-1', title: 'Portfolio Website', img: '/portfolio-1.webp', slug: 'sins-portfolio' },
-  { id: 'private-2', title: 'COMING SOON', img: '/weiterbildung-1.webp', slug: 'weiterbildung' },
+  { id: 'private-1', title: 'Portfolio Website', img: '/sins-portfolio-1.webp', slug: 'sins-portfolio' },
 ]
 
 export default function PortfolioPage() {
