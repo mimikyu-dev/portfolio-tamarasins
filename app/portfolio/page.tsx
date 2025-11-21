@@ -11,18 +11,14 @@ type Project = {
 };
 
 const businessProjects = [
-  { id: 'business-1', title: 'JGA Buddies', img: '/projects/business1.png', slug: 'jga-buddies' },
-  { id: 'business-2', title: 'MyWeinwanderung', img: '/projects/business2.png', slug: 'myweinwanderung' },
-  { id: 'business-3', title: 'TSV Löchgau', img: '/projects/business3.png', slug: 'tsv-loechgau' },
+  { id: 'business-1', title: 'JGA Buddies', img: '/jga-buddies-1.webp', slug: 'jga-buddies' },
+  { id: 'business-2', title: 'MyWeinwanderung', img: '/myweinwanderung-1.webp', slug: 'myweinwanderung' },
+  { id: 'business-3', title: 'TSV Löchgau', img: '/tsv-loechgau-1.webp', slug: 'tsv-loechgau' },
 ]
 
-const consumerProjects = [
-  { id: 'consumer-1', title: 'Portfolio Website', img: '/projects/consumer1.png', slug: 'sins-portfolio' },
-  { id: 'consumer-2', title: 'COMING SOON', img: '/projects/consumer2.png', slug: 'weiterbildung' },
-]
-
-const gameProjects = [
-  { id: 'game-1', title: 'Game Projekt', img: '/projects/game1.png', slug: 'game-1' },
+const privateProjects = [
+  { id: 'private-1', title: 'Portfolio Website', img: '/portfolio-1.webp', slug: 'sins-portfolio' },
+  { id: 'private-2', title: 'COMING SOON', img: '/weiterbildung-1.webp', slug: 'weiterbildung' },
 ]
 
 export default function PortfolioPage() {
@@ -50,14 +46,11 @@ export default function PortfolioPage() {
     <section className="px-4">
       <h1 className="text-4xl font-heading mb-8 text-[#E56D6A]">Portfolio</h1>
 
-      <h2 className="text-2xl font-semibold text-[#E56D6A] mb-4">Business & Corporate</h2>
+      <h2 className="text-2xl font-semibold text-[#E56D6A] mb-4">Unternehmensprojekte</h2>
       {renderProjects(businessProjects)}
 
-      <h2 className="text-2xl font-semibold text-[#E56D6A] mt-12 mb-4">Consumer & Apps</h2>
-      {renderProjects(consumerProjects)}
-
-      <h2 className="text-2xl font-semibold text-[#E56D6A] mt-12 mb-4">Games & Interactive Experiences</h2>
-      {renderProjects(gameProjects)}
+      <h2 className="text-2xl font-semibold text-[#E56D6A] mt-12 mb-4">Private & Lernprojekte</h2>
+      {renderProjects(privateProjects)}
     </section>
   )
 }
